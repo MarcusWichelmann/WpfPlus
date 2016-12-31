@@ -10,18 +10,28 @@
         Height="350"
         Width="525"
         Style="{StaticResource WindowStyle}">
-    <plus:SimpleForm Margin="5">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="0">Feld 1:</TextBlock>
-        <TextBox Grid.Column="1" />
-        <TextBlock Grid.Column="0">Feld 2:</TextBlock>
-        <TextBox Grid.Column="1" />
-        <TextBlock Grid.Column="0">Feld 3:</TextBlock>
-        <TextBox Grid.Column="1" />
-        <Button Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right">Speichern</Button>
-    </plus:SimpleForm>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <plus:SpacedStackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+            <Button>Button 3</Button>
+        </plus:SpacedStackPanel>
+        <plus:SimpleForm Grid.Row="1"  Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0">Feld 1:</TextBlock>
+            <TextBox Grid.Column="1" />
+            <TextBlock Grid.Column="0">Feld 2:</TextBlock>
+            <TextBox Grid.Column="1" />
+            <TextBlock Grid.Column="0">Feld 3:</TextBlock>
+            <TextBox Grid.Column="1" />
+            <Button Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right">Speichern</Button>
+        </plus:SimpleForm>
+    </Grid>
 </Window>
-    

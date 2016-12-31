@@ -61,6 +61,11 @@ namespace WpfPlus.Controls
             }
         }
 
+        public SpacedGrid()
+        {
+            SnapsToDevicePixels = true;
+        }
+
         protected override Size MeasureOverride(Size constraint)
         {
             UpdateChildMargins();

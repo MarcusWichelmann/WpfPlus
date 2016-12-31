@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\SimpleForm.cs" />
+    <Compile Include="Controls\SpacedStackPanel.cs" />
     <Compile Include="Controls\SpacedGrid.cs" />
     <Compile Include="LightTheme.xaml.cs">
       <DependentUpon>LightTheme.xaml</DependentUpon>
