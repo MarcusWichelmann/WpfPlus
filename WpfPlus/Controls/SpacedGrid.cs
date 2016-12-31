@@ -20,8 +20,8 @@ namespace WpfPlus.Controls
     /// </summary>
     public class SpacedGrid : Grid
     {
-        private const int DefaultColumnSpacing = 5;
-        private const int DefaultRowSpacing = 5;
+        private const int DefaultColumnSpacing = 6;
+        private const int DefaultRowSpacing = 6;
 
         /// <summary>
         /// Amount of Pixels between each column.

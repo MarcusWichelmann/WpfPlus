@@ -20,20 +20,20 @@ namespace WpfPlus.Controls
     /// </summary>
     public class SpacedStackPanel : StackPanel
     {
-        private const int DefaultColumnSpacing = 5;
-        private const int DefaultRowSpacing = 5;
+        private const int DefaultHorizontalSpacing = 6;
+        private const int DefaultVerticalSpacing = 6;
 
         /// <summary>
         /// Amount of Pixels between each column. Only relevant when <see cref="Orientation"/> is Horizontal.
         /// </summary>
         public static readonly DependencyProperty HorizontalSpacingProperty = DependencyProperty.Register(nameof(HorizontalSpacing), typeof(int), typeof(SpacedGrid),
-            new FrameworkPropertyMetadata(DefaultColumnSpacing, FrameworkPropertyMetadataOptions.AffectsArrange | FrameworkPropertyMetadataOptions.AffectsMeasure));
+            new FrameworkPropertyMetadata(DefaultHorizontalSpacing, FrameworkPropertyMetadataOptions.AffectsArrange | FrameworkPropertyMetadataOptions.AffectsMeasure));
 
         /// <summary>
         /// Amount of pixels between each row. Only relevant when <see cref="Orientation"/> is Vertical.
         /// </summary>
         public static readonly DependencyProperty VerticalSpacingProperty = DependencyProperty.Register(nameof(VerticalSpacing), typeof(int), typeof(SpacedGrid),
-            new FrameworkPropertyMetadata(DefaultRowSpacing, FrameworkPropertyMetadataOptions.AffectsArrange | FrameworkPropertyMetadataOptions.AffectsMeasure));
+            new FrameworkPropertyMetadata(DefaultVerticalSpacing, FrameworkPropertyMetadataOptions.AffectsArrange | FrameworkPropertyMetadataOptions.AffectsMeasure));
 
         /// <summary>
         /// Amount of Pixels between each column. Only relevant when Orientation is Horizontal.
