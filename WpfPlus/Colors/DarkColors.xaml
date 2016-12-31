@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Colors -->
+    <Color x:Key="BackgroundColor1">#151515</Color> <!-- Lists -->
+    <Color x:Key="BackgroundColor2">#1A1A1A</Color> <!-- Lists (Every second row) -->
+    <Color x:Key="BackgroundColor3">#1E1E1E</Color> <!-- Window background -->
+    <Color x:Key="BackgroundColor4">#333333</Color> <!-- Background & Border of controls -->
+    <Color x:Key="BackgroundColor5">#404040</Color> <!-- Focus, Press & Hover highlights ... -->
+    <Color x:Key="ForegroundColor2">#C4C4C4</Color> <!-- Text color for controls ... -->
+    <Color x:Key="ForegroundColor1">#F0F0F0</Color> <!-- Default text color ... -->
+
+    <!-- Window -->
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource BackgroundColor3}" />
+    <SolidColorBrush x:Key="WindowForegroundBrush" Color="{StaticResource ForegroundColor1}" />
+
+    <!-- Window Frame -->
+
+    <!-- Button -->
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource BackgroundColor4}" />
+    <SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource BackgroundColor4}" />
+    <SolidColorBrush x:Key="ButtonForegroundBrush" Color="{StaticResource ForegroundColor2}" />
+    <SolidColorBrush x:Key="ButtonHoverBackgroundBrush" Color="{StaticResource BackgroundColor4}" />
+    <SolidColorBrush x:Key="ButtonHoverBorderBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="ButtonPressBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="ButtonPressBorderBrush" Color="{StaticResource BackgroundColor5}" />
+
+    <!-- TextBox -->
+    <SolidColorBrush x:Key="TextBoxBackgroundBrush" Color="{StaticResource BackgroundColor4}" />
+    <SolidColorBrush x:Key="TextBoxBorderBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="TextBoxForegroundBrush" Color="{StaticResource ForegroundColor2}" />
+    <SolidColorBrush x:Key="TextBoxHoverBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="TextBoxFocusBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
+
+    <!-- ComboBox -->
+    <SolidColorBrush x:Key="ComboBoxButtonBackgroundBrush" Color="{StaticResource BackgroundColor4}" />
+    <SolidColorBrush x:Key="ComboBoxButtonBorderBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="ComboBoxButtonForegroundBrush" Color="{StaticResource ForegroundColor2}" />
+    <SolidColorBrush x:Key="ComboBoxButtonHoverBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="ComboBoxButtonPressBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="ComboBoxListBackgroundBrush" Color="{StaticResource BackgroundColor2}" />
+</ResourceDictionary>
