@@ -7,31 +7,91 @@
         xmlns:plus="clr-namespace:WpfPlus.Controls;assembly=WpfPlus"
         mc:Ignorable="d"
         Title="WpfPlus-Toolkit Demo"
-        Height="350"
-        Width="525"
-        Style="{StaticResource WindowStyle}">
+        Height="409.31"
+        Width="595.293"
+        Style="{StaticResource WindowStyle}"
+        d:DataContext="{d:DesignInstance local:MainWindow}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <plus:SpacedStackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
-            <Button>Button 1</Button>
-            <Button>Button 2</Button>
-            <Button>Button 3</Button>
+        <plus:SpacedStackPanel Grid.Row="0"
+                               Orientation="Horizontal"
+                               Margin="5">
+            <Button>Enabled</Button>
+            <Button IsEnabled="False">Disabled</Button>
         </plus:SpacedStackPanel>
-        <plus:SimpleForm Grid.Row="1"  Margin="5">
+        <plus:SimpleForm Grid.Row="1" Margin="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0">Feld 1:</TextBlock>
+            <TextBlock Grid.Column="0">Enabled:</TextBlock>
             <TextBox Grid.Column="1" />
-            <TextBlock Grid.Column="0">Feld 2:</TextBlock>
-            <TextBox Grid.Column="1" />
-            <TextBlock Grid.Column="0">Feld 3:</TextBlock>
-            <TextBox Grid.Column="1" />
-            <Button Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right">Speichern</Button>
+            <TextBlock Grid.Column="0">Disabled:</TextBlock>
+            <TextBox Grid.Column="1"
+                     IsEnabled="False"
+                     Text="You'll never be able to edit me!" />
+            <TextBlock Grid.Column="0">Numeric:</TextBlock>
+            <TextBox Grid.Column="1"
+                     Text="{Binding TextBoxTestIntegerValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Grid.Column="0">Enabled:</TextBlock>
+            <ComboBox Grid.Column="1">
+                <ComboBox.Items>
+                    <ComboBoxItem>This</ComboBoxItem>
+                    <ComboBoxItem>is</ComboBoxItem>
+                    <ComboBoxItem>a</ComboBoxItem>
+                    <ComboBoxItem>test</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <TextBlock Grid.Column="0">Disabled:</TextBlock>
+            <ComboBox Grid.Column="1"
+                      IsEnabled="False">
+                <ComboBox.Items>
+                    <ComboBoxItem>This</ComboBoxItem>
+                    <ComboBoxItem>is</ComboBoxItem>
+                    <ComboBoxItem>a</ComboBoxItem>
+                    <ComboBoxItem>test</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <TextBlock Grid.Column="0">Editable Enabled:</TextBlock>
+            <ComboBox Grid.Column="1"
+                      IsEditable="True">
+                <ComboBox.Items>
+                    <ComboBoxItem>This</ComboBoxItem>
+                    <ComboBoxItem>is</ComboBoxItem>
+                    <ComboBoxItem>a</ComboBoxItem>
+                    <ComboBoxItem>test</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <TextBlock Grid.Column="0">Editable Disabled:</TextBlock>
+            <ComboBox Grid.Column="1"
+                      IsEditable="True"
+                      IsEnabled="False">
+                <ComboBox.Items>
+                    <ComboBoxItem>This</ComboBoxItem>
+                    <ComboBoxItem>is</ComboBoxItem>
+                    <ComboBoxItem>a</ComboBoxItem>
+                    <ComboBoxItem>test</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <TextBlock Grid.Column="0">Numeric:</TextBlock>
+            <ComboBox Grid.Column="1"
+                      IsEditable="True"
+                      Text="{Binding TextBoxTestIntegerValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <ComboBox.Items>
+                    <ComboBoxItem>0</ComboBoxItem>
+                    <ComboBoxItem>42</ComboBoxItem>
+                    <ComboBoxItem>99</ComboBoxItem>
+                    <ComboBoxItem>keks</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <Button Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    HorizontalAlignment="Right">
+                Speichern
+            </Button>
         </plus:SimpleForm>
     </Grid>
 </Window>

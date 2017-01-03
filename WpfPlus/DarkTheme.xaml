@@ -3,11 +3,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colors/DarkColors.xaml" />
-        
-        <ResourceDictionary Source="Styles/WindowStyle.xaml" />
-        <ResourceDictionary Source="Styles/ButtonStyle.xaml" />
+
+        <ResourceDictionary Source="Styles/Styles.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    
-    <Style TargetType="{x:Type Window}" BasedOn="{StaticResource WindowStyle}" />
-    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}" />
 </ResourceDictionary>

@@ -4,10 +4,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colors/LightColors.xaml" />
 
-        <ResourceDictionary Source="Styles/WindowStyle.xaml" />
-        <ResourceDictionary Source="Styles/ButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/Styles.xaml" />
     </ResourceDictionary.MergedDictionaries>
-
-    <Style TargetType="{x:Type Window}" BasedOn="{StaticResource WindowStyle}"></Style>
-    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}"></Style>
 </ResourceDictionary>

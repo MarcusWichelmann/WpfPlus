@@ -37,6 +37,10 @@ namespace WpfPlus.Controls
 
                 lastColumn = childColumn;
                 SetRow(child, currentRow);
+
+                FrameworkElement control = child as FrameworkElement;
+                if (control != null)
+                    control.VerticalAlignment = VerticalAlignment.Center;
             }
         }
     }

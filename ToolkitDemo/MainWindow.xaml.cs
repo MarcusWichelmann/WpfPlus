@@ -17,9 +17,12 @@ namespace ToolkitDemo
 {
     public partial class MainWindow : Window
     {
+        public int TextBoxTestIntegerValue { get; set; } = 42;
+
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }
