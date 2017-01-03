@@ -20,10 +20,6 @@
      
     <!-- Window Frame -->
 
-    <!-- TextBlock -->
-    <SolidColorBrush x:Key="TextBlockForegroundBrush" Color="{StaticResource ForegroundColor1}" />
-    <SolidColorBrush x:Key="TextBlockDisabledForegroundBrush" Color="{StaticResource ForegroundColor2}" />
-    
     <!-- Button -->
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
     <SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource BackgroundColor5}" />

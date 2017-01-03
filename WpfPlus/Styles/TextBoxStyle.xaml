@@ -10,7 +10,7 @@
         <Setter Property="Cursor" Value="IBeam" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="AllowDrop" Value="true" />
-        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Padding" Value="2" />
         <Setter Property="Validation.ErrorTemplate" Value="{DynamicResource ValidationErrorOverlayTemplate}" />
