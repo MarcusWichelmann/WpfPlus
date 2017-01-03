@@ -8,10 +8,14 @@
         <ResourceDictionary Source="ButtonStyle.xaml" />
         <ResourceDictionary Source="TextBoxStyle.xaml" />
         <ResourceDictionary Source="ComboBoxStyle.xaml" />
+        <ResourceDictionary Source="GroupBoxStyle.xaml" />
+        <ResourceDictionary Source="ListBoxStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Window}" BasedOn="{StaticResource WindowStyle}" />
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}" />
     <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextBoxStyle}" />
     <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxStyle}" />
+    <Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource GroupBoxStyle}" />
+    <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource ListBoxStyle}" />
 </ResourceDictionary>

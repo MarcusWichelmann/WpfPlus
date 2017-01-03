@@ -5,7 +5,7 @@
     <Color x:Key="BackgroundColor1">#151515</Color>
     <Color x:Key="BackgroundColor2">#1A1A1A</Color>
     <Color x:Key="BackgroundColor3">#1E1E1E</Color>
-    <Color x:Key="BackgroundColor4">#2D2D2D</Color>
+    <Color x:Key="BackgroundColor4">#292929</Color>
     <Color x:Key="BackgroundColor5">#333333</Color>
     <Color x:Key="BackgroundColor6">#404040</Color>
     <Color x:Key="ForegroundColor4">#151515</Color>
@@ -29,7 +29,7 @@
     <SolidColorBrush x:Key="ButtonPressBackgroundBrush" Color="{StaticResource BackgroundColor6}" />
     <SolidColorBrush x:Key="ButtonPressBorderBrush" Color="{StaticResource BackgroundColor6}" />
     <SolidColorBrush x:Key="ButtonDisabledBackgroundBrush" Color="{StaticResource BackgroundColor4}" />
-    <SolidColorBrush x:Key="ButtonDisabledBorderBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="ButtonDisabledBorderBrush" Color="{StaticResource BackgroundColor4}" />
     <SolidColorBrush x:Key="ButtonDisabledForegroundBrush" Color="{StaticResource ForegroundColor3}" />
 
     <!-- TextBox -->
@@ -65,4 +65,16 @@
     <!-- ValidationErrorOverlay -->
     <SolidColorBrush x:Key="ValidationErrorOverlayBorderBrush" Color="{StaticResource RedColor}" />
     <SolidColorBrush x:Key="ValidationErrorOverlayForegroundBrush" Color="{StaticResource ForegroundColor4}" />
+    
+    <!-- GroupBox -->
+    <SolidColorBrush x:Key="GroupBoxBackgroundBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="GroupBoxBorderBrush" Color="{StaticResource BackgroundColor6}" />
+    <SolidColorBrush x:Key="GroupBoxHeaderForegroundBrush" Color="{StaticResource ForegroundColor2}" />
+    
+    <!-- ListBox -->
+    <SolidColorBrush x:Key="ListBoxBackgroundBrush" Color="{StaticResource BackgroundColor1}" />
+    <SolidColorBrush x:Key="ListBoxForegroundBrush" Color="{StaticResource ForegroundColor2}" />
+    <SolidColorBrush x:Key="ListBoxBorderBrush" Color="{StaticResource BackgroundColor6}" />
+    <SolidColorBrush x:Key="ListBoxItemFirstBackgroundBrush" Color="{StaticResource BackgroundColor1}" />
+    <SolidColorBrush x:Key="ListBoxItemSecondBackgroundBrush" Color="{StaticResource BackgroundColor2}" />
 </ResourceDictionary>

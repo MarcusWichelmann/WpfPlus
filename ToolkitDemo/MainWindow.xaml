@@ -7,22 +7,31 @@
         xmlns:plus="clr-namespace:WpfPlus.Controls;assembly=WpfPlus"
         mc:Ignorable="d"
         Title="WpfPlus-Toolkit Demo"
-        Height="409.31"
-        Width="595.293"
+        Height="508.31"
+        Width="993.293"
         Style="{StaticResource WindowStyle}"
         d:DataContext="{d:DesignInstance local:MainWindow}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
         <plus:SpacedStackPanel Grid.Row="0"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
                                Orientation="Horizontal"
                                Margin="5">
             <Button>Enabled</Button>
             <Button IsEnabled="False">Disabled</Button>
         </plus:SpacedStackPanel>
-        <plus:SimpleForm Grid.Row="1" Margin="5">
+        <plus:SimpleForm Grid.Row="1"
+                         Grid.Column="0"
+                         Margin="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
@@ -93,5 +102,87 @@
                 Speichern
             </Button>
         </plus:SimpleForm>
+        <GridSplitter Grid.Row="1"
+                      Grid.Column="1"
+                      HorizontalAlignment="Stretch" />
+        <ScrollViewer Grid.Row="1"
+                      Grid.Column="2"
+                      HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto">
+            <WrapPanel>
+                <GroupBox Header="GroupBox 1"
+                          Margin="5"
+                          Padding="3"
+                          Width="250"
+                          Height="200"
+                          VerticalAlignment="Top">
+                    <DataGrid>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="*" Header="Column1" />
+                            <DataGridTextColumn Width="*" Header="Column2" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+                <GroupBox Header="GroupBox 2"
+                          Margin="5"
+                          Padding="3"
+                          Width="200"
+                          Height="250"
+                          VerticalAlignment="Top">
+                    <ListBox>
+                        <ListBoxItem>Item 1</ListBoxItem>
+                        <ListBoxItem>Item 2</ListBoxItem>
+                        <ListBoxItem>Item 3</ListBoxItem>
+                        <ListBoxItem>Item 4</ListBoxItem>
+                        <ListBoxItem>Item 5</ListBoxItem>
+                        <ListBoxItem>Item 6</ListBoxItem>
+                        <ListBoxItem>Item 7</ListBoxItem>
+                        <ListBoxItem>Item 8</ListBoxItem>
+                        <ListBoxItem>Item 9</ListBoxItem>
+                        <ListBoxItem>Item 10</ListBoxItem>
+                        <ListBoxItem>Item 11</ListBoxItem>
+                        <ListBoxItem>Item 12</ListBoxItem>
+                        <ListBoxItem>Item 13</ListBoxItem>
+                        <ListBoxItem>Item 14</ListBoxItem>
+                        <ListBoxItem>Item 15</ListBoxItem>
+                        <ListBoxItem>Item 16</ListBoxItem>
+                        <ListBoxItem>Item 17</ListBoxItem>
+                        <ListBoxItem>Item 18</ListBoxItem>
+                        <ListBoxItem>Item 19</ListBoxItem>
+                        <ListBoxItem>Item 20</ListBoxItem>
+                        <ListBoxItem>Item 42</ListBoxItem>
+                    </ListBox>
+                </GroupBox>
+                <GroupBox Header="GroupBox 3"
+                          Margin="5"
+                          Padding="0"
+                          Width="200"
+                          Height="200"
+                          VerticalAlignment="Top">
+                    <ListBox BorderThickness="0">
+                        <ListBoxItem>Item 1</ListBoxItem>
+                        <ListBoxItem>Item 2</ListBoxItem>
+                        <ListBoxItem>Item 3</ListBoxItem>
+                        <ListBoxItem>Item 4</ListBoxItem>
+                        <ListBoxItem>Item 5</ListBoxItem>
+                        <ListBoxItem>Item 6</ListBoxItem>
+                        <ListBoxItem>Item 7</ListBoxItem>
+                        <ListBoxItem>Item 8</ListBoxItem>
+                        <ListBoxItem>Item 9</ListBoxItem>
+                        <ListBoxItem>Item 10</ListBoxItem>
+                        <ListBoxItem>Item 11</ListBoxItem>
+                        <ListBoxItem>Item 12</ListBoxItem>
+                        <ListBoxItem>Item 13</ListBoxItem>
+                        <ListBoxItem>Item 14</ListBoxItem>
+                    </ListBox>
+                </GroupBox>
+                <GroupBox Header="GroupBox 4"
+                          Margin="5"
+                          Padding="3"
+                          Width="200"
+                          Height="200"
+                          VerticalAlignment="Top" />
+            </WrapPanel>
+        </ScrollViewer>
     </Grid>
 </Window>

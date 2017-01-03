@@ -33,7 +33,6 @@
                         </Border>
                         <ToggleButton x:Name="ToggleButton"
                                       ClickMode="Press"
-                                      Focusable="False"
                                       HorizontalAlignment="Right"
                                       Background="{DynamicResource ComboBoxButtonBackgroundBrush}"
                                       BorderBrush="{DynamicResource ComboBoxButtonBorderBrush}"
@@ -119,6 +118,7 @@
                             <Setter TargetName="PART_EditableTextBox" Property="Visibility" Value="Visible" />
                             <Setter TargetName="NonEditableBorder" Property="Visibility" Value="Hidden" />
                             <Setter TargetName="ToggleButton" Property="BorderThickness" Value="1,0,0,0" />
+                            <Setter TargetName="ToggleButton" Property="Focusable" Value="False" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
