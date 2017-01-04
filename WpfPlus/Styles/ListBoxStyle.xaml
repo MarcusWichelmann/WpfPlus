@@ -25,6 +25,8 @@
             <Setter.Value>
                 <Style TargetType="{x:Type ListBoxItem}">
                     <Setter Property="SnapsToDevicePixels" Value="True" />
+                    <Setter Property="HorizontalContentAlignment" Value="Left" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
                     <Setter Property="Background" Value="{DynamicResource ListBoxItemFirstBackgroundBrush}" />
                     <Style.Triggers>
                         <Trigger Property="ItemsControl.AlternationIndex" Value="1">
