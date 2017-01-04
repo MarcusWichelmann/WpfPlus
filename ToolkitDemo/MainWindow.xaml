@@ -175,7 +175,7 @@
                     </ListBox>
                 </GroupBox>
                 <TabControl Margin="5"
-                            Width="200"
+                            Width="300"
                             Height="200"
                             VerticalAlignment="Top">
                     <TabItem Header="Page 1">
