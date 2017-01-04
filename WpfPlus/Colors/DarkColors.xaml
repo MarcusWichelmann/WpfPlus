@@ -75,7 +75,8 @@
     <SolidColorBrush x:Key="ValidationErrorOverlayForegroundBrush" Color="{StaticResource ForegroundColor4}" />
     
     <!-- GroupBox -->
-    <SolidColorBrush x:Key="GroupBoxBackgroundBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="GroupBoxBackgroundBrush" Color="{StaticResource BackgroundColor1}" />
+    <SolidColorBrush x:Key="GroupBoxContainedBackgroundBrush" Color="{StaticResource BackgroundColor2}" />
     <SolidColorBrush x:Key="GroupBoxBorderBrush" Color="{StaticResource BackgroundColor6}" />
     <SolidColorBrush x:Key="GroupBoxHeaderForegroundBrush" Color="{StaticResource ForegroundColor2}" />
 

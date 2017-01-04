@@ -24,6 +24,7 @@
                                               Margin="8,3,8,3" />
                         </TextBlock>
                         <Border Grid.Row="1"
+                                Background="{TemplateBinding Background}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}">
                             <ContentPresenter Margin="{TemplateBinding Padding}" />

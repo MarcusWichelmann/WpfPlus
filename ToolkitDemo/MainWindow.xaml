@@ -185,7 +185,10 @@
                         <TextBlock Text="Content 2" />
                     </TabItem>
                     <TabItem Header="Page 2">
-                        <TextBlock Text="Content 3" />
+                        <GroupBox Header="Contained GroupBox"
+                                  Width="250"
+                                  Height="150"
+                                  Background="{DynamicResource GroupBoxContainedBackgroundBrush}" />
                     </TabItem>
                     <TabItem Header="Disabled Page" IsEnabled="False">
                         <TextBlock Text="Content 4" />
