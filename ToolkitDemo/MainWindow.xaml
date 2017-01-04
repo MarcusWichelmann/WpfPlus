@@ -112,7 +112,6 @@
             <WrapPanel>
                 <GroupBox Header="GroupBox 1"
                           Margin="5"
-                          Padding="3"
                           Width="250"
                           Height="200"
                           VerticalAlignment="Top">
@@ -125,7 +124,6 @@
                 </GroupBox>
                 <GroupBox Header="GroupBox 2"
                           Margin="5"
-                          Padding="3"
                           Width="200"
                           Height="250"
                           VerticalAlignment="Top">
@@ -159,7 +157,7 @@
                           Width="200"
                           Height="200"
                           VerticalAlignment="Top">
-                    <ListBox BorderThickness="0">
+                    <ListBox BorderThickness="0" IsEnabled="False">
                         <ListBoxItem>Item 1</ListBoxItem>
                         <ListBoxItem>Item 2</ListBoxItem>
                         <ListBoxItem>Item 3</ListBoxItem>
@@ -176,12 +174,20 @@
                         <ListBoxItem>Item 14</ListBoxItem>
                     </ListBox>
                 </GroupBox>
-                <GroupBox Header="GroupBox 4"
-                          Margin="5"
-                          Padding="3"
-                          Width="200"
-                          Height="200"
-                          VerticalAlignment="Top" />
+                <TabControl Margin="5"
+                            Width="200"
+                            Height="200"
+                            VerticalAlignment="Top">
+                    <TabItem Header="Page 1">
+                        <TextBlock Text="Content 1" />
+                    </TabItem>
+                    <TabItem Header="Page 2">
+                        <TextBlock Text="Content 2" />
+                    </TabItem>
+                    <TabItem Header="Page 2">
+                        <TextBlock Text="Content 3" />
+                    </TabItem>
+                </TabControl>
             </WrapPanel>
         </ScrollViewer>
     </Grid>

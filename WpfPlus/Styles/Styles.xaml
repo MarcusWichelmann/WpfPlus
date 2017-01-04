@@ -3,8 +3,9 @@
                     xmlns:local="clr-namespace:WpfPlus.Styles">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Helpers.xaml" />
-        
+
         <ResourceDictionary Source="WindowStyle.xaml" />
+        <ResourceDictionary Source="TabControlStyle.xaml" />
         <ResourceDictionary Source="ButtonStyle.xaml" />
         <ResourceDictionary Source="TextBoxStyle.xaml" />
         <ResourceDictionary Source="ComboBoxStyle.xaml" />
@@ -15,6 +16,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Window}" BasedOn="{StaticResource WindowStyle}" />
+    <Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource TabControlStyle}" />
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}" />
     <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextBoxStyle}" />
     <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxStyle}" />

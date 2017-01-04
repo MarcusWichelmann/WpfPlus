@@ -4,7 +4,6 @@
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="Background" Value="{DynamicResource GroupBoxBackgroundBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource GroupBoxHeaderForegroundBrush}" />
         <Setter Property="BorderThickness" Value="2" />
         <Setter Property="BorderBrush" Value="{DynamicResource GroupBoxBorderBrush}" />
         <Setter Property="Padding" Value="3" />
@@ -16,14 +15,13 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0"
-                                   Background="{TemplateBinding BorderBrush}"
-                                   Foreground="{TemplateBinding Foreground}"
-                                   HorizontalAlignment="Left">
+                        <Border Grid.Row="0"
+                                Background="{TemplateBinding BorderBrush}"
+                                HorizontalAlignment="Left">
                             <ContentPresenter ContentSource="Header"
                                               RecognizesAccessKey="True"
-                                              Margin="6,2,6,2" />
-                        </TextBlock>
+                                              Margin="8,3,8,3" />
+                        </Border>
                         <Border Grid.Row="1"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}">

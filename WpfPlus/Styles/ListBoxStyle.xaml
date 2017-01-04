@@ -10,6 +10,8 @@
         <Setter Property="ItemContainerStyle">
             <Setter.Value>
                 <Style TargetType="{x:Type ListBoxItem}">
+                    <!--<Setter Property="OverridesDefaultStyle" Value="True" />
+                    <Setter Property="SnapsToDevicePixels" Value="True" />-->
                     <Setter Property="Background" Value="{DynamicResource ListBoxItemFirstBackgroundBrush}" />
                     <Style.Triggers>
                         <Trigger Property="ItemsControl.AlternationIndex" Value="1">

@@ -18,7 +18,12 @@
     <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource BackgroundColor3}" />
     <SolidColorBrush x:Key="WindowForegroundBrush" Color="{StaticResource ForegroundColor1}" />
      
-    <!-- Window Frame -->
+    <!-- TabControl -->
+    <SolidColorBrush x:Key="TabControlBackgroundBrush" Color="{StaticResource BackgroundColor1}" />
+    <SolidColorBrush x:Key="TabControlBorderBrush" Color="{StaticResource BackgroundColor6}" />
+    <SolidColorBrush x:Key="TabControlTabBackgroundBrush" Color="{StaticResource BackgroundColor4}" />
+    <SolidColorBrush x:Key="TabControlTabHoverBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
+    <SolidColorBrush x:Key="TabControlTabSelectedBackgroundBrush" Color="{StaticResource BackgroundColor6}" />
 
     <!-- Button -->
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource BackgroundColor5}" />
@@ -69,8 +74,7 @@
     <!-- GroupBox -->
     <SolidColorBrush x:Key="GroupBoxBackgroundBrush" Color="Transparent" />
     <SolidColorBrush x:Key="GroupBoxBorderBrush" Color="{StaticResource BackgroundColor6}" />
-    <SolidColorBrush x:Key="GroupBoxHeaderForegroundBrush" Color="{StaticResource ForegroundColor2}" />
-    
+
     <!-- ListBox -->
     <SolidColorBrush x:Key="ListBoxBackgroundBrush" Color="{StaticResource BackgroundColor1}" />
     <SolidColorBrush x:Key="ListBoxForegroundBrush" Color="{StaticResource ForegroundColor2}" />
