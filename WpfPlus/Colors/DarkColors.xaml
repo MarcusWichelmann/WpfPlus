@@ -77,4 +77,12 @@
     <SolidColorBrush x:Key="ListBoxBorderBrush" Color="{StaticResource BackgroundColor6}" />
     <SolidColorBrush x:Key="ListBoxItemFirstBackgroundBrush" Color="{StaticResource BackgroundColor1}" />
     <SolidColorBrush x:Key="ListBoxItemSecondBackgroundBrush" Color="{StaticResource BackgroundColor2}" />
+    
+    <!-- ScrollBar -->
+    <SolidColorBrush x:Key="ScrollBarBackgroundBrush" Color="{StaticResource BackgroundColor3}" />
+    <SolidColorBrush x:Key="ScrollBarForegroundBrush" Color="{StaticResource ForegroundColor3}" />
+    <SolidColorBrush x:Key="ScrollBarHoverForegroundBrush" Color="{StaticResource ForegroundColor1}" />
+    
+    <!-- ScrollViewer -->
+    <SolidColorBrush x:Key="ScrollViewerBackgroundBrush" Color="{StaticResource BackgroundColor3}" />
 </ResourceDictionary>

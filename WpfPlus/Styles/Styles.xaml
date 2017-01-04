@@ -10,6 +10,8 @@
         <ResourceDictionary Source="ComboBoxStyle.xaml" />
         <ResourceDictionary Source="GroupBoxStyle.xaml" />
         <ResourceDictionary Source="ListBoxStyle.xaml" />
+        <ResourceDictionary Source="ScrollBarStyle.xaml" />
+        <ResourceDictionary Source="ScrollViewerStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Window}" BasedOn="{StaticResource WindowStyle}" />
@@ -18,4 +20,6 @@
     <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxStyle}" />
     <Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource GroupBoxStyle}" />
     <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource ListBoxStyle}" />
+    <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource ScrollBarStyle}" />
+    <Style TargetType="{x:Type ScrollViewer}" BasedOn="{StaticResource ScrollViewerStyle}" />
 </ResourceDictionary>
