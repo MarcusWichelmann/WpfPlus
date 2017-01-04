@@ -14,9 +14,12 @@
                                     Margin="0,0,1,0"
                                     BorderThickness="0,0,0,1"
                                     BorderBrush="Transparent">
-                                <ContentPresenter ContentSource="Header"
-                                                  RecognizesAccessKey="True"
-                                                  Margin="8,3,8,3" />
+                                <TextBlock x:Name="TextBlock"
+                                           Foreground="{DynamicResource TabControlTabForegroundBrush}">
+                                    <ContentPresenter ContentSource="Header"
+                                                      RecognizesAccessKey="True"
+                                                      Margin="8,3,8,3" />
+                                </TextBlock>
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
@@ -28,6 +31,10 @@
                                             Value="{DynamicResource TabControlTabSelectedBackgroundBrush}" />
                                     <Setter TargetName="Border" Property="BorderBrush"
                                             Value="{DynamicResource TabControlTabSelectedBackgroundBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="TextBlock" Property="Foreground"
+                                            Value="{DynamicResource TabControlTabDisabledForegroundBrush}" />
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>

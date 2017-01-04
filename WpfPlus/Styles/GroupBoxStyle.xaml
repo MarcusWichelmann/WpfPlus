@@ -15,13 +15,14 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <Border Grid.Row="0"
-                                Background="{TemplateBinding BorderBrush}"
-                                HorizontalAlignment="Left">
+                        <TextBlock Grid.Row="0"
+                                   Background="{TemplateBinding BorderBrush}"
+                                   HorizontalAlignment="Left"
+                                   Foreground="{DynamicResource GroupBoxHeaderForegroundBrush}">
                             <ContentPresenter ContentSource="Header"
                                               RecognizesAccessKey="True"
                                               Margin="8,3,8,3" />
-                        </Border>
+                        </TextBlock>
                         <Border Grid.Row="1"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}">

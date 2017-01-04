@@ -187,6 +187,9 @@
                     <TabItem Header="Page 2">
                         <TextBlock Text="Content 3" />
                     </TabItem>
+                    <TabItem Header="Disabled Page" IsEnabled="False">
+                        <TextBlock Text="Content 4" />
+                    </TabItem>
                 </TabControl>
             </WrapPanel>
         </ScrollViewer>
