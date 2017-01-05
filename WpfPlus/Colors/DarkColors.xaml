@@ -107,4 +107,8 @@
     
     <!-- ScrollViewer -->
     <SolidColorBrush x:Key="ScrollViewerBackgroundBrush" Color="{StaticResource BackgroundColor3}" />
+
+    <!-- GridSplitter -->
+    <SolidColorBrush x:Key="GridSplitterBackgroundBrush" Color="{StaticResource BackgroundColor6}" />
+    <SolidColorBrush x:Key="GridSplitterForegroundBrush" Color="{StaticResource BackgroundColor4}" />
 </ResourceDictionary>
