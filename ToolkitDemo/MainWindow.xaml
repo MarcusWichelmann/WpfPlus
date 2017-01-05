@@ -179,7 +179,13 @@
                             Height="200"
                             VerticalAlignment="Top">
                     <TabItem Header="Page 1">
-                        <TextBlock Text="Content 1" />
+                        <plus:SimpleForm Margin="5">
+                            <CheckBox IsThreeState="True">CheckBox 1</CheckBox>
+                            <CheckBox IsChecked="True">CheckBox 2</CheckBox>
+                            <RadioButton GroupName="TestRadioButtons">RadioButton 1</RadioButton>
+                            <RadioButton GroupName="TestRadioButtons" IsChecked="True">RadioButton 2</RadioButton>
+                            <RadioButton GroupName="TestRadioButtons">RadioButton 3</RadioButton>
+                        </plus:SimpleForm>
                     </TabItem>
                     <TabItem Header="Page 2">
                         <TextBlock Text="Content 2" />
@@ -188,10 +194,11 @@
                         <GroupBox Header="Contained GroupBox"
                                   Width="250"
                                   Height="150"
-                                  Background="{DynamicResource GroupBoxContainedBackgroundBrush}" />
+                                  Background="{StaticResource GroupBoxContainedBackgroundBrush}" />
                     </TabItem>
-                    <TabItem Header="Disabled Page" IsEnabled="False">
-                        <TextBlock Text="Content 4" />
+                    <TabItem Header="Disabled Page"
+                             IsEnabled="False">
+                        <TextBlock Text="You should never read this..." />
                     </TabItem>
                 </TabControl>
             </WrapPanel>

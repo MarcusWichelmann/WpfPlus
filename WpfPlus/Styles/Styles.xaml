@@ -9,17 +9,22 @@
         <ResourceDictionary Source="ButtonStyle.xaml" />
         <ResourceDictionary Source="TextBoxStyle.xaml" />
         <ResourceDictionary Source="ComboBoxStyle.xaml" />
+        <ResourceDictionary Source="CheckBoxStyle.xaml" />
+        <ResourceDictionary Source="RadioButtonStyle.xaml" />
         <ResourceDictionary Source="GroupBoxStyle.xaml" />
         <ResourceDictionary Source="ListBoxStyle.xaml" />
         <ResourceDictionary Source="ScrollBarStyle.xaml" />
         <ResourceDictionary Source="ScrollViewerStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
+    <!-- TODO Contained auto -->
     <Style TargetType="{x:Type Window}" BasedOn="{StaticResource WindowStyle}" />
     <Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource TabControlStyle}" />
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}" />
     <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextBoxStyle}" />
     <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxStyle}" />
+    <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxStyle}" />
+    <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonStyle}" />
     <Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource GroupBoxStyle}" />
     <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource ListBoxStyle}" />
     <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource ScrollBarStyle}" />
