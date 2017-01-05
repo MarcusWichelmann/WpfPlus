@@ -5,7 +5,6 @@
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Background" Value="{DynamicResource RadioButtonBackgroundBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource RadioButtonForegroundBrush}" />
-        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="BorderBrush" Value="{DynamicResource RadioButtonBorderBrush}" />
         <Setter Property="Template">
             <Setter.Value>
@@ -15,12 +14,11 @@
                             <Grid Width="12"
                                   Height="12">
                                 <Ellipse Fill="{TemplateBinding Background}"
-                                         StrokeThickness="{TemplateBinding BorderThickness}"
+                                         StrokeThickness="1"
                                          Stroke="{TemplateBinding BorderBrush}" />
                                 <Ellipse x:Name="Mark"
                                          Visibility="Collapsed"
                                          Margin="3"
-                                         SnapsToDevicePixels="True"
                                          Fill="{DynamicResource RadioButtonMarkBrush}" />
                             </Grid>
                         </BulletDecorator.Bullet>

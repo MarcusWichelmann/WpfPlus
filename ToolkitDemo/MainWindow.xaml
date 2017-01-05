@@ -193,8 +193,7 @@
                     <TabItem Header="Page 2">
                         <GroupBox Header="Contained GroupBox"
                                   Width="250"
-                                  Height="150"
-                                  Background="{StaticResource GroupBoxContainedBackgroundBrush}" />
+                                  Height="150" />
                     </TabItem>
                     <TabItem Header="Disabled Page"
                              IsEnabled="False">
