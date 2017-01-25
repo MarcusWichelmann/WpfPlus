@@ -31,4 +31,4 @@ In case you like the light theme more you can also write `<wpfPlus:LightTheme />
 
 Finally you can add `Style="{DynamicResource FlatWindowStyle}"` to any window that should apply the flat style.
 
-__That's it!__
+__That's it. Have fun!__
