@@ -9,7 +9,7 @@
         Title="WpfPlus-Toolkit Demo"
         Height="500"
         Width="1080"
-        Style="{StaticResource WindowStyle}"
+        Style="{DynamicResource FlatWindowStyle}"
         d:DataContext="{d:DesignInstance local:MainWindow}">
     <Window.Resources>
         <XmlDataProvider x:Key="TestList" XPath="/MockObjects/*">
@@ -157,10 +157,11 @@
                 </GroupBox>
                 <GroupBox Header="GroupBox 2"
                           Margin="5"
+                          Padding="0"
                           Width="200"
                           Height="250"
                           VerticalAlignment="Top">
-                    <ListBox>
+                    <ListBox BorderThickness="0">
                         <ListBoxItem>Item 1</ListBoxItem>
                         <ListBoxItem>Item 2</ListBoxItem>
                         <ListBoxItem>Item 3</ListBoxItem>
