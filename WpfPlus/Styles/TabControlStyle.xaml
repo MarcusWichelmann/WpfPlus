@@ -18,7 +18,7 @@
                                            Foreground="{DynamicResource TabControlTabForegroundBrush}">
                                     <ContentPresenter ContentSource="Header"
                                                       RecognizesAccessKey="True"
-                                                      Margin="8,3,8,3" />
+                                                      Margin="8,3,8,2" />
                                 </TextBlock>
                             </Border>
                             <ControlTemplate.Triggers>

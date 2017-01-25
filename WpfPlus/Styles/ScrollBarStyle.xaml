@@ -167,6 +167,9 @@
                     </Setter.Value>
                 </Setter>
             </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Foreground" Value="{DynamicResource ScrollBarDisabledForegroundBrush}" />
+            </Trigger>
         </Style.Triggers>
     </Style>
 </ResourceDictionary>

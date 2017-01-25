@@ -64,6 +64,14 @@
                                           VerticalAlignment="Center"
                                           RecognizesAccessKey="True" />
                     </BulletDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource CheckBoxDisabledForegroundBrush}" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxDisabledBorderBrush}" />
+                            <Setter TargetName="CheckMark" Property="Stroke" Value="{DynamicResource CheckBoxDisabledMarkBrush}" />
+                            <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CheckBoxDisabledMarkBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

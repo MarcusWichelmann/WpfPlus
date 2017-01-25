@@ -38,6 +38,9 @@
                         <Trigger Property="ItemsControl.AlternationIndex" Value="1">
                             <Setter Property="Background" Value="{DynamicResource ListBoxItemSecondBackgroundBrush}" />
                         </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource ListBoxDisabledForegroundBrush}" />
+                        </Trigger>
                     </Style.Triggers>
                 </Style>
             </Setter.Value>

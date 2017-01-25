@@ -7,10 +7,36 @@
         xmlns:plus="clr-namespace:WpfPlus.Controls;assembly=WpfPlus"
         mc:Ignorable="d"
         Title="WpfPlus-Toolkit Demo"
-        Height="508.31"
-        Width="993.293"
+        Height="500"
+        Width="1080"
         Style="{StaticResource WindowStyle}"
         d:DataContext="{d:DesignInstance local:MainWindow}">
+    <Window.Resources>
+        <XmlDataProvider x:Key="TestList" XPath="/MockObjects/*">
+            <x:XData>
+                <MockObjects xmlns="">
+                    <MockObject Name="Tom" LastName="Thomas" State="Canada" Phone="0232/2362334" />
+                    <MockObject Name="Max" LastName="Mustermann" State="Germany" Phone="0623/236234" />
+                    <MockObject Name="Samantha" LastName="Johanson" State="Nowhere" Phone="0266/342623" />
+                    <MockObject Name="Tom" LastName="Thomas" State="Canada" Phone="0232/2362334" />
+                    <MockObject Name="Max" LastName="Mustermann" State="Germany" Phone="0623/236234" />
+                    <MockObject Name="Samantha" LastName="Johanson" State="Nowhere" Phone="0266/342623" />
+                    <MockObject Name="Tom" LastName="Thomas" State="Canada" Phone="0232/2362334" />
+                    <MockObject Name="Max" LastName="Mustermann" State="Germany" Phone="0623/236234" />
+                    <MockObject Name="Samantha" LastName="Johanson" State="Nowhere" Phone="0266/342623" />
+                    <MockObject Name="Tom" LastName="Thomas" State="Canada" Phone="0232/2362334" />
+                    <MockObject Name="Max" LastName="Mustermann" State="Germany" Phone="0623/236234" />
+                    <MockObject Name="Samantha" LastName="Johanson" State="Nowhere" Phone="0266/342623" />
+                    <MockObject Name="Tom" LastName="Thomas" State="Canada" Phone="0232/2362334" />
+                    <MockObject Name="Max" LastName="Mustermann" State="Germany" Phone="0623/236234" />
+                    <MockObject Name="Samantha" LastName="Johanson" State="Nowhere" Phone="0266/342623" />
+                    <MockObject Name="Tom" LastName="Thomas" State="Canada" Phone="0232/2362334" />
+                    <MockObject Name="Max" LastName="Mustermann" State="Germany" Phone="0623/236234" />
+                    <MockObject Name="Samantha" LastName="Johanson" State="Nowhere" Phone="0266/342623" />
+                </MockObjects>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -18,16 +44,16 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
         <plus:SpacedStackPanel Grid.Row="0"
                                Grid.Column="0"
                                Grid.ColumnSpan="2"
                                Orientation="Horizontal"
                                Margin="5">
-            <Button>Enabled</Button>
-            <Button IsEnabled="False">Disabled</Button>
+            <Button>Enabled Button</Button>
+            <Button IsEnabled="False">Disabled Button</Button>
         </plus:SpacedStackPanel>
         <plus:SimpleForm Grid.Row="1"
                          Grid.Column="0"
@@ -99,7 +125,7 @@
             <Button Grid.Column="0"
                     Grid.ColumnSpan="2"
                     HorizontalAlignment="Right">
-                Speichern
+                Save Button
             </Button>
         </plus:SimpleForm>
         <GridSplitter Grid.Row="1"
@@ -112,13 +138,20 @@
             <WrapPanel>
                 <GroupBox Header="GroupBox 1"
                           Margin="5"
-                          Width="250"
+                          Padding="0"
+                          Width="400"
                           Height="200"
                           VerticalAlignment="Top">
-                    <DataGrid>
+                    <DataGrid DataContext="{Binding Source={StaticResource TestList}}"
+                              ItemsSource="{Binding Mode=Default, XPath=/MockObjects/MockObject}"
+                              AutoGenerateColumns="False"
+                              BorderThickness="0"
+                              AlternationCount="2">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Width="*" Header="Column1" />
-                            <DataGridTextColumn Width="*" Header="Column2" />
+                            <DataGridTextColumn Header="Name" Binding="{Binding XPath=@Name}" Width="*" />
+                            <DataGridTextColumn Header="LastName" Binding="{Binding XPath=@LastName}" Width="*" />
+                            <DataGridTextColumn Header="State" Binding="{Binding XPath=@State}" Width="*" />
+                            <DataGridTextColumn Header="Phone" Binding="{Binding XPath=@Phone}" Width="*" />
                         </DataGrid.Columns>
                     </DataGrid>
                 </GroupBox>
@@ -182,9 +215,10 @@
                         <plus:SimpleForm Margin="5">
                             <CheckBox IsThreeState="True">CheckBox 1</CheckBox>
                             <CheckBox IsChecked="True">CheckBox 2</CheckBox>
+                            <CheckBox IsChecked="True" IsEnabled="False">CheckBox 3</CheckBox>
                             <RadioButton GroupName="TestRadioButtons">RadioButton 1</RadioButton>
                             <RadioButton GroupName="TestRadioButtons" IsChecked="True">RadioButton 2</RadioButton>
-                            <RadioButton GroupName="TestRadioButtons">RadioButton 3</RadioButton>
+                            <RadioButton GroupName="TestRadioButtons" IsEnabled="False">RadioButton 3</RadioButton>
                         </plus:SimpleForm>
                     </TabItem>
                     <TabItem Header="Page 2">
