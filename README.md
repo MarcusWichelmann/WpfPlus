@@ -1,6 +1,13 @@
 # WPF-Plus Toolkit
 _Modern flat themes and useful controls for your next WPF Application_
 
+__Features:__
+ - flat dark and light styles for the most popular controls
+ - highly customizable
+ - custom Grid and StackPanel with adjustable column and row spacing
+ - SimpleForm container to design forms easier than ever before
+ - helper classes for easier MVVM implementation in conjunction with MVVM Light
+
 [Download NuGet-Package](https://www.nuget.org/packages/WpfPlus/)
 
 ![Screenshot Dark Theme](http://marcusw.de/screenshots/fddc68f0a9efd497617dcd99444e3d80.png)
