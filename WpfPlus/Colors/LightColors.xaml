@@ -9,10 +9,10 @@
     <Color x:Key="BackgroundColor5">#D3D3D3</Color>
     <Color x:Key="BackgroundColor6">#C0C0C0</Color>
     <Color x:Key="ForegroundColor5">#E4E4E4</Color>
-    <Color x:Key="ForegroundColor4">#B0B0B0</Color>
+    <Color x:Key="ForegroundColor4">#909090</Color>
     <Color x:Key="ForegroundColor3">#6B6B6B</Color>
-    <Color x:Key="ForegroundColor2">#363636</Color>
-    <Color x:Key="ForegroundColor1">#202020</Color>
+    <Color x:Key="ForegroundColor2">#252525</Color>
+    <Color x:Key="ForegroundColor1">#101010</Color>
     <Color x:Key="SelectionColor1">#C9DEF5</Color>
     <Color x:Key="SelectionColor2">#83AEDE</Color>
     <Color x:Key="RedColor">#A20D0D</Color>

@@ -126,8 +126,8 @@
 
     <!-- ScrollBar -->
     <SolidColorBrush x:Key="ScrollBarBackgroundBrush" Color="{DynamicResource BackgroundColor3}" />
-    <SolidColorBrush x:Key="ScrollBarForegroundBrush" Color="{DynamicResource ForegroundColor3}" />
-    <SolidColorBrush x:Key="ScrollBarHoverForegroundBrush" Color="{DynamicResource ForegroundColor1}" />
+    <SolidColorBrush x:Key="ScrollBarForegroundBrush" Color="{DynamicResource ForegroundColor4}" />
+    <SolidColorBrush x:Key="ScrollBarHoverForegroundBrush" Color="{DynamicResource ForegroundColor3}" />
     <SolidColorBrush x:Key="ScrollBarDisabledForegroundBrush" Color="{DynamicResource ForegroundColor4}" />
 
     <!-- ScrollViewer -->
