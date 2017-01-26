@@ -19,7 +19,7 @@ Getting started is as simple as adding the `WpfPlus` NuGet-Package to your WPF p
 PM> Install-Package WpfPlus 
 ```
 
-After that you only need to slightly edit your project's `App.xaml` to look something like this:
+After that you only need to slightly edit your project's `App.xaml` to make it looking like this:
 ``` xaml
 <Application x:Class="MyApplication.App"
              [...]
