@@ -4,7 +4,7 @@
     <!--*-->
     <id>$id$</id>
     <!--*-->
-    <version>1.1</version>
+    <version>1.2</version>
     <title>WPF-Plus Toolkit</title>
     <!--*-->
     <authors>$author$</authors>
@@ -18,7 +18,7 @@
     <!--*-->
     <description>$description$</description>
     <!--*-->
-    <releaseNotes>Inherited&amp;#x0020;window&amp;#x0020;styling</releaseNotes>
+    <releaseNotes>Improve&amp;#x0020;foreground&amp;#x0020;color&amp;#x0020;selection</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>
     </tags>
