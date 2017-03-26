@@ -20,8 +20,8 @@
                             BorderThickness="{TemplateBinding BorderThickness}"
                             BorderBrush="{TemplateBinding BorderBrush}">
                         <ScrollViewer Focusable="false">
-                            <StackPanel Margin="1"
-                                        IsItemsHost="True" />
+                            <VirtualizingStackPanel Margin="1"
+                                                    IsItemsHost="True" />
                         </ScrollViewer>
                     </Border>
                 </ControlTemplate>
