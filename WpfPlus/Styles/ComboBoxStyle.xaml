@@ -10,6 +10,7 @@
         <Setter Property="TextElement.Foreground" Value="{DynamicResource TextBoxForegroundBrush}" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Validation.ErrorTemplate" Value="{DynamicResource ValidationErrorOverlayTemplate}" />
+        <Setter Property="Padding" Value="3,0" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBox}">
@@ -29,7 +30,7 @@
                                               Content="{TemplateBinding ComboBox.SelectionBoxItem}"
                                               ContentTemplate="{TemplateBinding ComboBox.SelectionBoxItemTemplate}"
                                               ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
-                                              Margin="4" />
+                                              Margin="{TemplateBinding Padding}" />
                         </Border>
                         <ToggleButton x:Name="ToggleButton"
                                       ClickMode="Press"
