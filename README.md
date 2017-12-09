@@ -1,6 +1,8 @@
 # WPF-Plus Toolkit
 _Modern flat themes and useful controls for your next WPF Application_
 
+**License:** ![CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 __Features:__
  - flat dark and light styles for the most popular controls
  - highly customizable
