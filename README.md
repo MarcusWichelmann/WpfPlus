@@ -12,8 +12,8 @@ __Features:__
 
 [Download NuGet-Package](https://www.nuget.org/packages/WpfPlus/)
 
-![Screenshot Dark Theme](http://marcusw.de/screenshots/fddc68f0a9efd497617dcd99444e3d80.png)
-![Screenshot Light Theme](http://marcusw.de/screenshots/906218b32cca4002dde62e32cef53340.png)
+![Screenshot Dark Theme](https://screenshots.marcusw.de/fddc68f0a9efd497617dcd99444e3d80.png)
+![Screenshot Light Theme](https://screenshots.marcusw.de/906218b32cca4002dde62e32cef53340.png)
 
 ## Install
 Getting started is as simple as adding the `WpfPlus` NuGet-Package to your WPF project. You can do this in the NuGet-Package-Manager or manually:
