@@ -207,12 +207,24 @@
                         <ListBoxItem>Item 13</ListBoxItem>
                         <ListBoxItem>Item 14</ListBoxItem>
                     </ListBox>
-                </GroupBox>
+                </GroupBox> 
                 <TabControl Margin="5"
                             Width="300"
                             Height="200"
-                            VerticalAlignment="Top">
+                            VerticalAlignment="Top"
+                            TabStripPlacement="{Binding ElementName=TabStripPlacements, Path=SelectedItem.Tag}">
                     <TabItem Header="Page 1">
+                        <plus:SimpleForm Margin="5">
+                            <TextBlock>TabStripPlacement:</TextBlock>
+                            <ListBox Name="TabStripPlacements" SelectedIndex="0">
+                                <ListBoxItem Tag="{x:Static Dock.Top}">Top</ListBoxItem>
+                                <ListBoxItem Tag="{x:Static Dock.Left}">Left</ListBoxItem>
+                                <ListBoxItem Tag="{x:Static Dock.Right}">Right</ListBoxItem>
+                                <ListBoxItem Tag="{x:Static Dock.Bottom}">Bottom</ListBoxItem>
+                            </ListBox>
+                        </plus:SimpleForm>
+                    </TabItem>
+                    <TabItem Header="Page 2">
                         <plus:SimpleForm Margin="5">
                             <CheckBox IsThreeState="True">CheckBox 1</CheckBox>
                             <CheckBox IsChecked="True">CheckBox 2</CheckBox>
@@ -221,9 +233,6 @@
                             <RadioButton GroupName="TestRadioButtons" IsChecked="True">RadioButton 2</RadioButton>
                             <RadioButton GroupName="TestRadioButtons" IsEnabled="False">RadioButton 3</RadioButton>
                         </plus:SimpleForm>
-                    </TabItem>
-                    <TabItem Header="Page 2">
-                        <TextBlock Text="Content 2" />
                     </TabItem>
                     <TabItem Header="Page 2">
                         <GroupBox Header="Contained GroupBox"
